@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Inter';
+  /* font-weight: 400 700; */
+  src: url(assets/fonts/Inter-VariableFont.woff2) format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-area {
+  flex-basis: 1440px;
+  min-height: 964px;
+  background: var(--grey900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  width: 384px;
+  background: var(--grey800);
+  text-align: center;
+  border-radius: 15px;
+  padding: 41px;
+}
+.card img {
+  width: 88px;
+  border-radius: 50%;
+}
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 24px 0 0;
+}
+.card h2 {
+  font-size: 0.9rem;
+  color: var(--green);
+  font-weight: 600;
+  padding: 8px 0 18px;
+}
+.card p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.card button {
+  display: block;
+  font-weight: 700;
+  width: 100%;
+  color: var(--white);
+  background: var(--grey700);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  margin-top: 16px;
+}
+
+.card button:active,
+.card button:hover {
+  background: var(--green);
+}
+
+@media (max-width: 450px) {
+  .main-area {
+    width: 375px;
+    padding: 30px 0;
+  }
+  .card {
+    width: 327px;
+    padding: 24px;
+  }
+}
