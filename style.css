@@ -55,7 +55,7 @@ body {
   background: var(--grey800);
   text-align: center;
   border-radius: 15px;
-  padding: 41px;
+  padding: 39px 41px 42px;
 }
 .card img {
   width: 88px;
